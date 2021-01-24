@@ -1,0 +1,29 @@
+img{
+    text-align: center;
+    height: 85vh;
+    width: 65%;
+}
+.meet{
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input{
+    width: 50%;
+    height: 5%;
+    background-color: rgb(235, 221, 204);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+button{
+    background-color: rgb(238, 243, 161);
+    font-size: 18px;
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+    border: 0px;
+}
