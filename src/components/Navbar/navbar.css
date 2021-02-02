@@ -1,0 +1,26 @@
+a {
+  font-size: 20px;
+  color: rgb(237, 237, 245);
+}
+a:hover{
+  animation: fade-up;
+  color: rgb(231, 231, 241);
+}
+.navbar {
+  background-color: #081025;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+.navbar-brand {
+  color: rgb(230, 230, 236);
+  font-size: 30px;
+  padding-left: 20px;
+}
+.logo {
+  justify-content: flex-start;
+  width: 120px;
+  height: 99px;
+}
+.justify-content-end {
+  padding-right: 38px;
+}

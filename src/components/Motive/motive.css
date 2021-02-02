@@ -1,25 +1,8 @@
 .main{
     padding: 10px;
-    height: 50vh;
-    background-color: rgba(202, 166, 166, 0.699);
-}
-.main h1{
-    text-align: center;
-    color:rgb(20, 20, 20);
-}
-.main hr{
-    padding-top: 0px;
-    margin-top: 0px;
-    border-top: 5px solid red;
-    width: 20vh;
-}
-.container { 
-    text-align:center; 
-}
-.container p { 
-  display: table;
-  margin:0 auto;
-  display: inline-block; 
-  font-size: 25px;
-  display: inline; 
+    height: 135vh;
+    background-color: #dd852b;
+    background: url(../.././images/motivation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

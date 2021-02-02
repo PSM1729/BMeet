@@ -7,7 +7,7 @@ const Mpage = () => {
             <div className="divback">
             </div>
             <div className="txtblk">
-                WELCOME
+                WELCOME TO BMEET
             </div>
         </div>
     )
