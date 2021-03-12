@@ -5,6 +5,7 @@ import About from './components/Pages/about.jsx';
 import Contact from './components/contact/Contact';
 import Heading from './components/Navbar/navbar.jsx';
 import Join from './components/Join/join.jsx';
+import video from './components/Video/video.jsx';
 
 const App = () => {
     return (
@@ -15,7 +16,8 @@ const App = () => {
                 <Route path="/" exact component={HomePage} />
                 <Route path="/about" component={About} />
                 <Route path="/contactus" component={Contact}/>
-                <Route path="/signin" component={Join}/>
+                <Route path="/signin" component={Join} />
+                <Route path="/:url" component={video} />
             </Switch>
         </Router>
         </div>
