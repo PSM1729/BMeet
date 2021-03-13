@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router,Route, Switch} from "react-router-dom";
 import HomePage from './components/Pages/homepage.jsx';
-import About from './components/Pages/about.jsx';
+import About from './components/Aboutus/About.jsx';
 import Contact from './components/contact/Contact';
 import Heading from './components/Navbar/navbar.jsx';
 import Join from './components/Join/join.jsx';
