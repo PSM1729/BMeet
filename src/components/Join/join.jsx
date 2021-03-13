@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Input, Button } from '@material-ui/core';
+import { Input} from '@material-ui/core';
 import bg1 from '../../images/2.png';
 import './join.css';
 
@@ -29,7 +29,8 @@ class Join extends Component{
             <img src={bg1} alt="VIDEO MEET" />
             <div className="box">
                 <h2>JOIN A MEET</h2>
-                <Input placeholder="URL" onChange={e=>this.ipChange(e)}></Input><br/>
+                <Input placeholder="URL" onChange={e => this.ipChange(e)}></Input>
+                <br/><br/>    
                 <button onClick={this.toJoinExist}>JOIN</button>
                 <br /><br/>
                 <h2>CREATE A MEET</h2>

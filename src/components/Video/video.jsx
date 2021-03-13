@@ -439,8 +439,8 @@ class video extends Component {
 	render() {
 		if(this.isChrome() === false){
 			return (
-				<div style={{background: "white", width: "30%", height: "auto", padding: "20px", minWidth: "400px",
-						textAlign: "center", margin: "auto", marginTop: "50px", justifyContent: "center"}}>
+				<div style={{background: "white", width: "30%", height: "auto", padding: "0px", minWidth: "400px",
+						textAlign: "center", margin: "auto", marginTop: "30px", justifyContent: "center"}}>
 					<h1>Sorry, this works only with Google Chrome</h1>
 				</div>
 			)
@@ -449,16 +449,16 @@ class video extends Component {
 			<div>
 				{this.state.askForUsername === true ?
 					<div>
-						<div style={{background: "white", width: "30%", height: "auto", padding: "20px", minWidth: "400px",
-								textAlign: "center", margin: "auto", marginTop: "50px", justifyContent: "center"}}>
-							<p style={{ margin: 0, fontWeight: "bold", paddingRight: "50px" }}>Set your username</p>
+						<div style={{background: "white", width: "30%", height: "auto", padding: "0px", minWidth: "400px",
+								textAlign: "center", margin: "auto", marginTop: "30px", marginBottom:"30px",justifyContent: "center"}}>
+							<p style={{ margin: "10px", fontWeight: "bold", paddingRight: "50px" }}>Set your username</p>
 							<Input placeholder="Username" value={this.state.username} onChange={e => this.handleUsername(e)} />
-							<Button variant="contained" color="primary" onClick={this.connect} style={{ margin: "20px" }}>Connect</Button>
+							<Button variant="contained" color="primary" onClick={this.connect} style={{marginLeft:'100px'}}>Connect</Button>
 						</div>
 
-						<div style={{ justifyContent: "center", textAlign: "center", paddingTop: "40px" }}>
+						<div style={{ justifyContent: "center", textAlign: "center", paddingTop: "0px" }}>
 							<video id="my-video" ref={this.localVideoref} autoPlay muted style={{
-								borderStyle: "solid",borderColor: "#bdbdbd",objectFit: "fill",width: "60%",height: "30%"}}></video>
+								borderStyle: "solid",borderColor: "#bdbdbd",objectFit: "fill",width: "47%",height: "10%"}}></video>
 						</div>
 					</div>
 					:
@@ -507,17 +507,16 @@ class video extends Component {
 						</Modal>
 
 						<div className="container">
-							<div style={{ paddingTop: "20px" }}>
+							<div style={{ paddingTop: "10px" }}>
 								<Input value={window.location.href} disable="true"></Input>
-								<Button style={{backgroundColor: "#3f51b5",color: "whitesmoke",marginLeft: "20px",
-									marginTop: "10px",width: "120px",fontSize: "10px"
+								<Button style={{backgroundColor: "#3f51b5",color: "whitesmoke",marginLeft: "100px",
+									marginTop: "5px",width: "120px",fontSize: "10px"
 								}} onClick={this.copyUrl}>Copy invite link</Button>
 							</div>
 
 							<Row id="main" className="flex-container" style={{ margin: 0, padding: 0 }}>
 								<video id="my-video" ref={this.localVideoref} autoPlay muted style={{
-									borderStyle: "solid",borderColor: "#bdbdbd",margin: "10px",objectFit: "fill",
-									width: "100%",height: "100%"}}></video>
+									borderStyle: "solid",borderColor: "#bdbdbd",width:"98%",height:"78%",position:"absolute",marginTop:'1rem',objectFit:"cover"}}></video>
 							</Row>
 						</div>
 					</div>
