@@ -1,7 +1,7 @@
 .divback{
     padding: 10px;
     height: 110vh;
-    background: url("D:\webpages\project\src\images\bg1.jpg");
+    background: url("./bg1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
