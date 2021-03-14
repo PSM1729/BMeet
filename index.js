@@ -7,7 +7,7 @@ const path = require("path")
 var xss = require("xss")
 
 var server = http.createServer(app)
-var io = require('socket.io')(server)
+var io = require('socket.io',  { transports: ['websocket', 'polling', 'flashsocket'] })(server,{  cors: {    origin: "*",    methods: ["GET", "POST"]  }})
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -111,5 +111,5 @@ io.on('connection', (socket) => {
 })
 
 server.listen(app.get('port'), () => {
-    console.log("listening on", app.get('port'))
+	console.log("listening on", app.get('port'))
 })
