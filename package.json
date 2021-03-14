@@ -37,6 +37,7 @@
     "xss": "^1.0.8"
   },
   "scripts": {
+    "server":"NODE_ENV=production nodemon index.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
